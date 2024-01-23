@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript addEventListener() Hands-On</title>
+  <style>
+      body{
+          background-color: teal
+          align-items: center
+          
+      }
+      button {
+          background-color: yellow
+      }
+  </style>
+</head>
+<body>
+
+  <h1>JavaScript addEventListener() Hands-On</h1>
+
+  <button id="button1">Button 1</button>
+  <button id="button2">Button 2</button>
+  <button id="button3">Button 3</button>
+
+  <script>
+    // Function 1
+    function handleClickButton1() {
+      alert("Button 1 was clicked!");
+    }
+
+    // Function 2
+    function handleClickButton2() {
+      alert("Button 2 was clicked!");
+    }
+
+    // Function 3
+    function handleClickButton3() {
+      alert("Button 3 was clicked!");
+    }
+
+    // Add event listeners
+    document.getElementById("button1").addEventListener("click", handleClickButton1);
+    document.getElementById("button2").addEventListener("click", handleClickButton2);
+    document.getElementById("button3").addEventListener("click", handleClickButton3);
+  </script>
+
+</body>
+</html>
